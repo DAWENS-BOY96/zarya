@@ -75,30 +75,22 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "ZARYA-MD~" + string_session;
+                        let md = "ZARYA~MD~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
-                        let desc = `*Hello there ZARYA MD User! 👋🏻* 
-
-> Do not share your session id with anyone.
-
- *Thanks for using ZARYA-MD 🚩* 
-
-> Join WhatsApp Channel :- ⤵️
- 
-https://whatsapp.com/channel/0029VbCHd5V1dAw132PB7M1B
-
-Dont forget to fork the repo ⬇️
-
-https://github.com/DAWENS-BOY96/Zaryabot-V1
-
-> *© Powered BY DAWENS  🖤*`; 
+                        let desc = `                    
+╔═════════════════
+║ *SESSION CONNECTED*         
+╠═════════════════
+║ *DAWENS BOY TECH*         
+╚═════════════════
+`; 
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "JawadTechX",
-thumbnailUrl: "https://i.imgur.com/GVW7aoD.jpeg",
-sourceUrl: "https://whatsapp.com/channel/0029VbCHd5V1dAw132PB7M1B",
+title: "DAWENS BOY TECH",
+thumbnailUrl: "https://files.catbox.moe/pbamxw.jpeg",
+sourceUrl: "https://whatsapp.com/channel/0029Vb6T8td5K3zQZbsKEU1R",
 mediaType: 1,
 renderLargerThumbnail: true
 }  
@@ -107,14 +99,14 @@ renderLargerThumbnail: true
 {quoted:code })
                     } catch (e) {
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
-                            let desc = `*Don't Share with anyone this code use for deploy ZARYA-MD*\n\n ◦ *Github:* https://github.com/DAWENS-BOY96/Zaryabot-V1`;
+                            let desc = `*Don't Share with anyone this code use for deploying*\n\n ◦ *Github:* https://github.com/INCONNU-BOY/INCONNU-XD-V2`;
                             await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "ZARYA-MD",
-thumbnailUrl: "https://i.imgur.com/GVW7aoD.jpeg",
-sourceUrl: "https://github.com/DAWENS-BOY96/Zaryabot-V1",
+title: "DAWENS BOY TECH",
+thumbnailUrl: "https://files.catbox.moe/pbamxw.jpeg",
+sourceUrl: "https://whatsapp.com/channel/0029Vb6T8td5K3zQZbsKEU1R",
 mediaType: 2,
 renderLargerThumbnail: true,
 showAdAttribution: true
