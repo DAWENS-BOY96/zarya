@@ -75,13 +75,13 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "ZARYA~MD~" + string_session;
+                        let md = "IZUKA~MD~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
                         let desc = `                    
 ╔═════════════════
 ║ *SESSION CONNECTED*         
 ╠═════════════════
-║ *DAWENS BOY TECH*         
+║ *BLACK BOY TECH*         
 ╚═════════════════
 `; 
                         await sock.sendMessage(sock.user.id, {
@@ -89,7 +89,7 @@ text: desc,
 contextInfo: {
 externalAdReply: {
 title: "INCONNU BOY TECH",
-thumbnailUrl: "https://files.catbox.moe/pbamxw.jpeg",
+thumbnailUrl: "https://files.catbox.moe/a51qw5.jpeg",
 sourceUrl: "https://whatsapp.com/channel/0029Vb6T8td5K3zQZbsKEU1R",
 mediaType: 1,
 renderLargerThumbnail: true
@@ -105,7 +105,7 @@ text: desc,
 contextInfo: {
 externalAdReply: {
 title: "INCONNU BOY TECH",
-thumbnailUrl: "https://files.catbox.moe/pbamxw.jpeg",
+thumbnailUrl: "https://files.catbox.moe/a51qw5.jpeg",
 sourceUrl: "https://whatsapp.com/channel/0029Vb6T8td5K3zQZbsKEU1R",
 mediaType: 2,
 renderLargerThumbnail: true,
